@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/volunteer_registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER" />
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"/>
+    </LinearLayout>
+    <include
+        android:id="@+id/registration_layout"
+        android:visibility="gone"
+        layout="@layout/volunteer_registration"/>
+
+    <include
+        android:id="@+id/login_layout"
+        android:visibility="gone"
+        layout="@layout/login"/>
+
+
+</RelativeLayout>
